@@ -1,0 +1,50 @@
+.note {
+  position: absolute;
+  top: 0;
+  right: -120px;
+  animation: noteMovement 2s infinite;
+  &__img {
+    height: 120px;
+  }
+}
+
+.note2 {
+  position: absolute;
+  top: 0;
+  right: -120px;
+  animation: noteMovement2 2s infinite;
+  &__img2 {
+    height: 120px;
+  }
+}
+
+@keyframes noteMovement {
+  0% {
+    right: -120px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    right: -200px;
+    top: -100px;
+    opacity: 0;
+  }
+}
+
+@keyframes noteMovement2 {
+  0% {
+    right: -120px;
+    opacity: 0;
+    top: 100px;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    right: -130px;
+    top: -10px;
+    opacity: 0;
+  }
+}

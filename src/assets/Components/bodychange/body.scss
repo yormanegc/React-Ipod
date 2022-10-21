@@ -1,0 +1,42 @@
+.app{
+    background-color: #51345b;
+}
+.app.active{
+    animation: bodychanger 20s ease-in-out infinite;
+}
+
+@keyframes bodychanger {
+    0%{
+        background-color: #51345b;
+    }
+    10%{
+        background-color: #7a3f67;
+    }
+    20%{
+        background-color: #b7577a;
+    }
+    30%{
+        background-color: #f1808b;
+    }
+    40%{
+        background-color: #f4b58e;
+    }
+    50%{
+        background-color: #ffc9a4;
+    }
+    60%{
+        background-color: #ffe89d;
+    }
+    70%{
+        background-color: #20a6d9;
+    }
+    80%{
+        background-color: #156a96;
+    }
+    90%{
+        background-color: #20dad8;
+    }
+    100%{
+        background-color: #20dab7;
+    }
+}

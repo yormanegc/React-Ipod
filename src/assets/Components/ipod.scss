@@ -1,0 +1,61 @@
+.app {
+  height: 100vh;
+  @include centerDefault(flex, center, center);
+  flex-direction: column;
+}
+
+.ipod {
+  border: 1px solid black;
+  height: 350px;
+  width: 270px;
+  border-radius: 18px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: $ipod-color;
+  position: relative;
+  z-index: 2;
+}
+
+.ipod:before {
+  content: "";
+  height: 2px;
+  width: 23px;
+  transform: rotate(-50deg);
+  background-color: $black-color;
+  position: absolute;
+  left: -14px;
+  top: 12px;
+}
+
+.ipodContainer {
+  position: relative;
+  height: 350px;
+  width: 270px;
+}
+
+.ipodlat {
+  background-color: $black-color;
+  height: 350px;
+  width: 270px;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  border-radius: 18px;
+  left: -10px;
+}
+
+.ipodShadow {
+  background-color: $black-color;
+  height: 130px;
+  width: 260px;
+  border-radius: 18px;
+  position: absolute;
+  top: 220px;
+  left: -90px;
+  transform: skewX(50deg);
+  opacity: 50%;
+}
+
+

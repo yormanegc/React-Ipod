@@ -1,0 +1,49 @@
+.buttonsContainer {
+    background-color: $black-color;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    align-self: center;
+    position: relative;
+  
+    &__back {
+      @include buttonDefault;
+      position: absolute;
+      top: 62px;
+      left: 10px;
+      color: $white-color;
+    }
+    &__next {
+      @include buttonDefault;
+      position: absolute;
+      top: 62px;
+      right: 10px;
+      color: $white-color;
+    }
+    &__playpause {
+      @include buttonDefault;
+      position: absolute;
+      top: 115px;
+      left: 56px;
+      display: flex;
+      color: $white-color;
+    }
+    &__goback {
+      @include buttonDefault;
+      position: absolute;
+      top: 12px;
+      left: 62px;
+      color: $white-color;
+    }
+  }
+  
+  .buttonsContainer::after {
+    content: "";
+    height: 60px;
+    width: 60px;
+    background-color: $ipod-color;
+    position: absolute;
+    border-radius: 50%;
+    top: 45px;
+    left: 45px;
+  }

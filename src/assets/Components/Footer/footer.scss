@@ -1,0 +1,25 @@
+.footer{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    bottom: 0;
+    &__social{
+        list-style: none;
+        @include centerDefault(flex,end,center);
+        gap: 10px;
+        width: 20%;
+        padding-right: 16px;
+        &-item{
+            color: white;
+            font-size: 2em;
+        }
+    }
+    &__name{
+       color: white;
+       font-weight: 200;
+       padding-left: 16px;
+    }
+}

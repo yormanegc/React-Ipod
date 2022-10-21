@@ -1,0 +1,12 @@
+@mixin centerDefault($a, $b, $c) {
+  display: $a;
+  justify-content: $b;
+  align-items: $c;
+}
+
+@mixin buttonDefault {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+}

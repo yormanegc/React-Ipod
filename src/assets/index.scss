@@ -1,0 +1,23 @@
+//variables
+@import "./Variables/colors.scss";
+
+//Mixins
+@import "./Mixins/globalMixins.scss";
+//components
+@import "./Components/ipod.scss";
+@import "./Components/volume.scss";
+@import "./Components/Notes/notes.scss";
+@import "./Components/bodychange/body.scss";
+@import "./Components/Buttons/buttons.scss";
+@import "./Components/Window/window.scss";
+@import "./Components/Footer/footer.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
